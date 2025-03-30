@@ -2,32 +2,34 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>영화 리뷰</title>
-    <script type="module" crossorigin src="/javascript-movie-review/assets/index-BdV0ZUQq.js"></script>
-    <link rel="stylesheet" crossorigin href="/javascript-movie-review/assets/index-DhzhVWGw.css">
+    <script type="module" crossorigin src="/javascript-movie-review/assets/index-BMM5V-i6.js"></script>
+    <link rel="stylesheet" crossorigin href="/javascript-movie-review/assets/index-CO_nG1Gg.css">
   </head>
   <body>
     <div id="app">
       <header>
+        <div class="search-header">
+          <h1 class="logo">
+            <img src="./images/logo.png" alt="MovieList" />
+          </h1>
+        </div>
         <div class="background-container">
           <div class="overlay" aria-hidden="true">
-            <img class = "overlay-image" src="https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg" alt="background" />
+            <img
+              class="overlay-image"
+              src="https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg"
+              alt="background"
+            />
           </div>
-          <div class="top-rated-container">
-            <div class="search-header">
-              <h1 class="logo">
-                <img src="./images/logo.png" alt="MovieList" />
-              </h1>
+          <div class="top-rated-movie">
+            <div class="rate">
+              <img src="./images/star_empty.png" class="star" />
+              <span class="rate-value">9.5</span>
             </div>
-            <div class="top-rated-movie">
-              <div class="rate">
-                <img src="./images/star_empty.png" class="star" />
-                <span class="rate-value">9.5</span>
-              </div>
-              <div class="title">인사이드 아웃2</div>
-              <button class="primary detail">자세히 보기</button>
-            </div>
+            <div class="title">인사이드 아웃2</div>
+            <button class="primary detail">자세히 보기</button>
           </div>
         </div>
       </header>
@@ -39,11 +41,13 @@
           </section>
         </main>
       </div>
-
       <footer class="footer">
         <p>&copy; 우아한테크코스 All Rights Reserved.</p>
         <p><img src="./images/woowacourse_logo.png" width="180" /></p>
       </footer>
-    </div>
+    </div>
+
+    <div id="modalBackground" class="modal-background"></div>
+
   </body>
 </html>
