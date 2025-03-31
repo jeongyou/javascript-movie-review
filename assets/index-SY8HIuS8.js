@@ -448,7 +448,6 @@ class MovieCard {
       </div>
     `;
     li.addEventListener("click", () => {
-      console.log(this.movie.title);
       const modal = new MovieModal(this.movie, this.movieService);
       modal.render();
     });
